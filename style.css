@@ -438,23 +438,86 @@ a:hover{
     width: 70%;
 }
 
-form{
+.reg-book-details > form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 }
 
-form > label {
+.registree-details > form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.firsthr-lines{
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+.firsthr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 82%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+ .sechr-lines{
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+.sechr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 77%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+.row{
     display: flex;
     flex-direction: row;
 }
 
-form > label > p{
-    width: 140px;
+.row > p{
+    width: 200px;
 }
 
-input {
+.row > input{
+    padding: 12px 12px;
+    border-radius: 12px;
     width: 100%;
+}
+
+.availability-option{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.availability > p{
+    width: 200px;
+}
+
+.availability-option > label {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.submit-btn{
+    background-color: #F4CE47;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
 }
 
 @media(width <= 1300px){
