@@ -453,33 +453,36 @@ a:hover{
 .firsthr-lines{
     position: relative;
     margin-bottom: 16px;
+    overflow: hidden;
   }
 
 .firsthr-lines:after{
     content:" ";
     height: 2px;
-    width: 82%;
+    width: 100%;
     background: white;
     display: block;
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 120px;
+    
   }
 
  .sechr-lines{
     position: relative;
     margin-bottom: 16px;
+    overflow: hidden;
   }
 
 .sechr-lines:after{
     content:" ";
     height: 2px;
-    width: 77%;
+    width: 100%;
     background: white;
     display: block;
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 140px;
   }
 
 .row{
@@ -576,6 +579,10 @@ a:hover{
 
     .book-details{
         min-width: none;
+    }
+
+    .container-register{
+        width: 100%;
     }
 }
 
